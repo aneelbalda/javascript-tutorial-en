@@ -425,7 +425,7 @@ Here, the first expression `1 + 2` is evaluated, and its result is thrown away, 
 ```smart header="Comma has a very low precedence"
 Please note that the comma operator has very low precedence, lower than `=`, so parentheses are important in the example above.
 
-Without them: `a = 1 + 2, 3 + 4` evaluates `+` first, summing the numbers into `a = 3, 7`, then the assignment operator `=` assigns    `a = 3`, and then the number after the comma `7` is not processed anyhow, so it's ignored.
+Without them: `a = 1 + 2, 3 + 4` evaluates `+` first, summing the numbers into `a = 3, 7`, then the assignment operator `=` assigns    `a = 3`, and then the number after the comma `7` will be assigned.
 ```
 
 Why do we need such an operator which throws away everything except the last part?
